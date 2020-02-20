@@ -1,4 +1,7 @@
-package vn.com.pattern;
+package vn.com.pattern.factory;
+
+import vn.com.pattern.chair.Chair;
+import vn.com.pattern.table.Table;
 
 public abstract class FurnitureAbstractFactory {
 

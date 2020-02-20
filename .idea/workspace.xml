@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c1efe79-856d-410f-ab92-a92569007510" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/vn/com/pattern/Chair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vn/com/pattern/FlasticFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vn/com/pattern/FurnitureAbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vn/com/pattern/FurnitureFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vn/com/pattern/PlasticChair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vn/com/pattern/PlasticTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vn/com/pattern/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vn/com/pattern/chair/WoodChair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vn/com/pattern/common/MaterialType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vn/com/pattern/factory/WoodFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/vn/com/pattern/table/WoodTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AbstractFactoryPattern/com/pattern/Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pattern/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vn/com/pattern/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AbstractFactoryPattern/vn/com/pattern/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AbstractFactoryPattern/vn/com/pattern/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vn/com/pattern/Chair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vn/com/pattern/chair/Chair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vn/com/pattern/FlasticFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vn/com/pattern/factory/PlasticFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vn/com/pattern/FurnitureAbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vn/com/pattern/FurnitureAbstractFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vn/com/pattern/FurnitureFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vn/com/pattern/FurnitureFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vn/com/pattern/PlasticChair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vn/com/pattern/chair/PlasticChair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vn/com/pattern/PlasticTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vn/com/pattern/table/PlasticTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vn/com/pattern/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vn/com/pattern/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vn/com/pattern/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vn/com/pattern/table/Table.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +27,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -94,30 +99,34 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="576" y="235" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582165423719" />
-    <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1582172882309">
+    <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1582181505133">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582172882309" />
+    <state x="605" y="141" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582181505133" />
     <state x="529" y="216" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582163915803">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="529" y="216" key="#com.intellij.ide.util.TreeClassChooserDialog/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582163915803" />
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1582171697741">
+    <state x="415" y="26" key="CommitChangelistDialog2" timestamp="1582182481980">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582171697741" />
-    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1582171697741">
+    <state x="415" y="26" key="CommitChangelistDialog2/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582182481980" />
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1582182468801">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582171697741" />
-    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1582171697741">
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582182468801" />
+    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1582182468800">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582171697741" />
-    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1582171697741">
+    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582182468800" />
+    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1582182468800">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582171697741" />
+    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582182468800" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1582182468800">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864/1920.0.1920.1080@62.0.1474.864" timestamp="1582182468800" />
     <state width="1431" height="277" key="GridCell.Tab.1.bottom" timestamp="1582108500063">
       <screen x="62" y="0" width="1474" height="864" />
     </state>

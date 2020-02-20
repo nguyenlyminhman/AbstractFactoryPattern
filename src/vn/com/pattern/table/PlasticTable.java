@@ -1,4 +1,4 @@
-package vn.com.pattern;
+package vn.com.pattern.table;
 
 public class PlasticTable implements Table {
     @Override
